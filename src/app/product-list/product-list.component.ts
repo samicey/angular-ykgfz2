@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListComponent implements OnInit {
       pageTitle: string ='Product list';
+      showImage: boolean = false;
       products: any[] = [
   {
     "productId": 1,
@@ -59,6 +60,9 @@ export class ProductListComponent implements OnInit {
     "imageUrl": "assets/images/xbox-controller.png"
   }
 ];
+toggleImage(): void{
+  this.showImage = !this.showImage;
+}
   constructor() { }
 
   ngOnInit() {
