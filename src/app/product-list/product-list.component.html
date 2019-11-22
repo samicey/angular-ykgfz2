@@ -35,9 +35,9 @@
     <tr *ngFor="let product of products">
       <td><img [src]='product.imageUrl' [title]='product.productName' *ngIf="showImage"></td>
       <td>{{product.productName}}</td>
-      <td>{{product.productCode}}</td>
-      <td>{{product.releaseDate}}</td>
-      <td>{{product.price}}</td>
+      <td>{{product.productCode | lowerca}}</td>
+      <td>{{product.releaseDate | date}}</td>
+      <td>{{product.price | currency:'USD':'symbol':'1.2-2'}}</td>
       <td>{{product.starRating}}</td>
     </tr>
   </tbody>
