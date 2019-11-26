@@ -9,10 +9,11 @@ import { HelloComponent } from './hello.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { StarComponent } from './shared/star.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,HttpClientModule],
-  declarations: [ AppComponent, HelloComponent, ProductListComponent,ConvertToSpacePipe,StarComponent, WelcomeComponent ],
+  declarations: [ AppComponent, HelloComponent, ProductListComponent,ConvertToSpacePipe,StarComponent, WelcomeComponent, ProductDetailComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
